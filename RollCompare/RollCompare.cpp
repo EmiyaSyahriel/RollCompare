@@ -84,10 +84,9 @@ PVideoFrame __stdcall RollCompare::GetFrame(int n, IScriptEnvironment* env)
 			int colPerPx = vi.IsRGB32() ? 4 : 3;
 
 			for (int ci = 0; ci < (int)clips.size(); ci++) {
-				PVideoFrame clip_a = clips[0]->GetFrame(n, env);
 				PVideoFrame clip_b = clips[ci]->GetFrame(n, env);
 
-				const unsigned char* _a = clip_a->GetReadPtr();
+				const unsigned char* _a = frame->GetReadPtr();
 				const unsigned char* _b = clip_b->GetReadPtr();
 				bool isW = frame->IsWritable();
 				unsigned char* srcp = frame->GetWritePtr();
