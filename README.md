@@ -26,7 +26,7 @@ ConvertToYV12(matrix="Rec601", interlaced=false)
     - `x`, `h`, `horz` , `horizontal` : Horizontal
     - `y`, `v`, `vert` , `vertical` : Vertical
     - Any other value : Main clip will be returned
-  - `int speed` : Rolling speed, measured in pixel per frame
+  - `int speed` : Rolling speed, measured in pixel per frame, 0 to keep it still
   - `Clip ...` : Additional clips mask-rolled over main clip
 
 ## Building
@@ -68,7 +68,8 @@ loads AviSynth+ and this plugin such as AvsPmod and other players.
 
 ## Issues
 The current code requires significant amount of processing power the more video need to
-be compared, will be more visible then is done real-time.
+be compared, it will be more visible if is done real-time. So it was advised to use an offline encoder
+like avs2x264, ffmpeg or MeGUI.
 
 ## License
 Free for Public Use!
