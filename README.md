@@ -7,11 +7,20 @@ LoadPlugin("RollCompare_r64.dll")
 v1 = DirectShowSource("K:\SAMPLES\kururiuta_720p60.mp4",video=true,audio=true)
 v2 = DirectShowSource("K:\SAMPLES\akaisekaikierukoro_720p60.mp4",video=true,audio=false)
 v3 = DirectShowSource("K:\SAMPLES\danslobscurite_720p60.mp4",video=true,audio=false)
+
+v1 = ConvertToRGB24(v1)
+v2 = ConvertToRGB24(v2)
+v3 = ConvertToRGB24(v3)
 PSW_RollCompare(v1, "h", 3, v2, v3)
+
+ConvertToYV12(matrix="Rec601", interlaced=false)
 ```
 
+## Preview
+![alt text](readme/readme_image.png)
+
 ## Filters
-- `PSW_RollCompare(Clip clip1, string direction, int speed, Clip ...)`
+- `PSW_RollCompare(Clip clip1, string direction, int speed, Clip ...)` (Only supports RGB24 and RGB32)
   - `Clip clip1` : Main Clip
   - `string direction` : Rolling Direction, valid values :
     - `x`, `h`, `horz` , `horizontal` : Horizontal
