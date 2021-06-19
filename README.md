@@ -1,5 +1,7 @@
 # RollCompare
 Avisynth+ Plugin to create mask-rolling ( or mask-scrolling if you prefer ) comparison between videos.
+It can be built as AviSynth 2.5 plugin with some efforts. It's encouraged to edit the CMakeFiles.txt
+here.
 
 ## Usage
 ```javascript
