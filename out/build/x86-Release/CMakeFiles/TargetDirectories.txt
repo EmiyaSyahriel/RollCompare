@@ -1,5 +1,0 @@
-K:/Works/cpp/RollCompare/out/build/x86-Release/CMakeFiles/edit_cache.dir
-K:/Works/cpp/RollCompare/out/build/x86-Release/CMakeFiles/rebuild_cache.dir
-K:/Works/cpp/RollCompare/out/build/x86-Release/RollCompare/CMakeFiles/rebuild_cache.dir
-K:/Works/cpp/RollCompare/out/build/x86-Release/RollCompare/CMakeFiles/RollCompare.dir
-K:/Works/cpp/RollCompare/out/build/x86-Release/RollCompare/CMakeFiles/edit_cache.dir
