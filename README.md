@@ -63,8 +63,13 @@ the post-build script file name reflects the configuration and architecture it's
 - `RollCompare_d64.dll` - x64-Debug
 - `RollCompare_r32.dll` - x86-Release
 - `RollCompare_r64.dll` - x64-Release
-Debug binaries can be used to debug using IDE/Debugger of your choice with debuggable program that 
-loads AviSynth+ and this plugin such as AvsPmod and other players.
+
+### Debugging
+- Include the plugin to an AviSynth script (the Debug DLL one of course)
+- load the script to any AviSynth-capable Video Player
+- Attach your debugger to the player, players so far I've succesfully tested:
+  - AvsPmod
+  - Aegisub
 
 ## Issues
 The current code requires significant amount of processing power the more video need to
